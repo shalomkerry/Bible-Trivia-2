@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #ecf2f8;
+}
+#container {
+  position: absolute;
+  border: 5px solid black;
+  height: 1046px;
+  width: 1500px;
+  top: 10%;
+  left: 10%;
+  border-radius: 23px;
+  background: #bcaaa4;
+}
+.inner {
+  position: relative;
+  border: 5px solid black;
+  height: 750px;
+  width: 1200px;
+  border-radius: 60px;
+  bottom: 25px;
+  left: 148px;
+  display: flex;
+  justify-content: center;
+
+  background-image: url("https://biblestudypage.files.wordpress.com/2016/08/the_holy_bible.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#question {
+  margin-top: 100px;
+  width: 60%;
+}
+#question h1 {
+  margin-bottom: 20px;
+  font-size: 60px;
+  color: #efc232;
+  font-weight: 900;
+  border-bottom: 2px solid black;
+  padding-bottom: 20px;
+}
+#question h2 {
+  font-size: 34px;
+  color: #222;
+  font-weight: ;
+}
+#buttons {
+  display: flex;
+  flex-direction: column;
+}
+.but {
+  padding: 10px;
+  height: 50px;
+  width: 100%;
+  text-align: left;
+  background: #fff;
+  font-size: 26px;
+  margin: 10px 0;
+  color: #222;
+  border: 2px solid #222;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.but:hover:not([disabled]) {
+  background: orange;
+  color: #ffff;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.but:disabled {
+  cursor: no-drop;
+}
+#nextbtn {
+  width: 150px;
+  height: 60px;
+  color: white;
+  background: #001e4d;
+  border: none;
+  border-radius: 12px;
+  margin: 10px auto 0;
+  display: hidden;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.side {
+  border: 7px solid black;
+  height: 170px;
+  width: 170px;
+  border-radius: 20px;
+  background: black;
+}
+.side1 {
+  position: relative;
+  width: 172px;
+}
+.side2 {
+  position: absolute;
+  bottom: 0px;
+}
+.side3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.side4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /*   height:165px; */
+}
+.correct {
+  background: #9aeabc;
+}
+.incorrect {
+  background: #ff9393;
+}
+@media (min-width: 576px) {
+  #container {
+    transform: scale(0.9);
+  }
+}
